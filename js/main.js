@@ -5,10 +5,10 @@ const API = "https://api.github.com/users/";
 const app = Vue.createApp({
     data() {
         return {
-            message: "Search GitHub users",
+            search: null
         };
     },
-    method: {
+    methods: {
         async doSearch() {
             const response = await fetch(API + 'juanwmedia')
             const data = await response.json()
