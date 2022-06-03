@@ -28,8 +28,12 @@
 
             <!-- Result -->
      <div class="result" v-if="result">
-<h2 class="result__name">Juan Andres Nuñez</h2>
-<img src="https://avatars.githubusercontent.com/u/8166774?v=4" alt="" class="result__avatar">
+        <h2 class="result__name">{{ result.name }}</h2>
+        <img v-bind:src="result.avatar_url" :alt="result.name" class="result__avatar">
+        <p class="result__bio"> {{ result.bio }}</p> <br>
+        <a v-bind: href="result.blog" target="_blank" class="result__blog"> {{ result.blog   }}</a>
+
+
 
      </div>
 
