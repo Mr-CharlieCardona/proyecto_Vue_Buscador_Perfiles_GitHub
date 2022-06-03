@@ -12,6 +12,7 @@ const app = Vue.createApp({
     },
     methods: {
         async doSearch() {
+            this.result = this.error = null
 
             try {
                 const response = await fetch(API + this.search)

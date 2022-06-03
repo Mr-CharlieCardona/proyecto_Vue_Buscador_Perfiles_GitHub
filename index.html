@@ -33,12 +33,14 @@
 
      </div>
 
+     <p v-else>Waiting for search...</p>
+
 
 
             <!-- Error -->
-            <div class="result__error"></div>
+            <div class="result__error" v-if="error">Error found</div>
         </article>
-    </div>
+    </div> 
     <script src="js/main.js"></script>
     <script>
         const mountedApp = app.mount("#app")
