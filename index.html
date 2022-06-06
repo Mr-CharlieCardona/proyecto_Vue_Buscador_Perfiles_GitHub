@@ -28,7 +28,7 @@
 
             <!-- Result -->
      <div class="result" v-if="result">
-         <a href="#" class="result__toggle-favorite" @click="addFavorite" >Add Favorite  ⭐ </a>
+         <a href="#" class="result__toggle-favorite" v-on="addFavorite" >Add Favorite  ⭐ </a>
         <h2 class="result__name">{{ result.name }}</h2>
         <img v-bind:src="result.avatar_url" v-bind:alt="result.name" class="result__avatar">
         <p class="result__bio"> {{ result.bio }}  <br>
