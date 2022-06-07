@@ -62,5 +62,6 @@ const app = Vue.createApp({
         updateStorage(){
             window.localStorage.setItem('favorites', JSON.stringify(this.allFavorites))
         }
+        
     }
 });
